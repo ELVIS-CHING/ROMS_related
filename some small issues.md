@@ -1,4 +1,8 @@
+[TOC]
 # Something has to be noticed
+* common issues for all version
+* ROMS32 version with bio module modification
 
 ## ROMS32 version with bio module modification
-32 版本code ndia不能设为0
+* must define the diagnostic output
+* 'NDIA' in *.in file must be a nonzero value
