@@ -1,7 +1,8 @@
-[TOC]
 # Something has to be noticed
-* common issues for all version
+* Common issues for all versions
 * ROMS32 version with bio module modification
+
+## Common issues for all versions
 
 ## ROMS32 version with bio module modification
 * must define the diagnostic output
