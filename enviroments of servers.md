@@ -1,6 +1,6 @@
 # about how to set the enviroments on different servers
 including fortran complier, mpi, and netcdf
-------------------------------
+
 ## servers that are using
 * hqlx42/hqlx43
 * hqlx24
@@ -9,4 +9,4 @@ including fortran complier, mpi, and netcdf
 * Tianjin
 * GZ_gjp
 * GZ_juno GZ_bl
-------------------------------
+
