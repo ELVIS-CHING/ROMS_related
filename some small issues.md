@@ -1,6 +1,6 @@
 # Something has to be noticed
-* Common issues for all versions
-* ROMS32 version with bio module modification
+- [Common issues for all versions](#common-issues-for-all-versions)
+- [ROMS32 version with bio module modification](#roms32-version-with-bio-module-modification)
 
 ## Common issues for all versions
 
