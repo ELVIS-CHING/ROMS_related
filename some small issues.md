@@ -6,4 +6,12 @@
 
 ## ROMS32 version with bio module modification
 * must define the diagnostic output
-* 'NDIA' in *.in file must be a nonzero value
+  
+* 'NDIA' in *.in file must be a nonzero value error  
+  >   forrtl: severe (71): integer divide by zero
+
+* note the initial input file time
+
+* varinfo.dat ( do not confuse the different versions)
+
+* 
