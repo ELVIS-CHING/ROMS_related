@@ -1,14 +1,14 @@
 # ROMS_related
-things related to ROMS model
+things related to the ROMS model
 
 ## CONTRIBUTORS:
-ELVIS-CHING: weicong
+ELVIS-CHING: Weicong
 
 DanDanDanShen: Yanning
 
 ## IMPORTANT LINKS
 * [WikiROMS](https://www.myroms.org/forum/viewforum.php?f=13)  
-  the basic knowledge about ROMS and some guildance
+  the basic knowledge about ROMS and some guidance
 
 * [ROMS FORUM](https://www.myroms.org/forum/viewforum.php?f=13)  
   modeling discussion
@@ -17,7 +17,7 @@ DanDanDanShen: Yanning
 * [environments of servers.md](https://github.com/ELVIS-CHING/ROMS_related/blob/main/enviroments%20of%20servers.md)  
 about how to set the environments on different servers
 
-* [steps to run a model](https://github.com/ELVIS-CHING/ROMS_related/blob/main/steps%20to%20run%20a%20model.md)
+* [steps to run a model](https://github.com/ELVIS-CHING/ROMS_related/blob/main/steps%20to%20run%20a%20model.md)  
 important steps to run a model
 
 * [some small issues.md](https://github.com/ELVIS-CHING/ROMS_related/blob/main/some%20small%20issues.md)  
