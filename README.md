@@ -11,7 +11,7 @@ DanDanDanShen: Yanning
   the basic knowledge about ROMS and some guildance
 
 * [ROMS FORUM](https://www.myroms.org/forum/viewforum.php?f=13)  
-  modeling Discussion
+  modeling discussion
   
 ## CONTENTS
 * [environments of servers.md](https://github.com/ELVIS-CHING/ROMS_related/blob/main/enviroments%20of%20servers.md)  
