@@ -13,6 +13,9 @@
 * 'NDIA' in *.in file must be a nonzero value error  
   >   forrtl: severe (71): integer divide by zero
 
+* 'RIVER_OM' : if you cannot undef this mode
+  >   ROMS/Unility/inp_par.F: 3764 lost ifdef RIVER_OM
+
 
 
 
