@@ -21,7 +21,7 @@ about how to set the environments on different servers
 important steps to run a model  
 
 * [functions.md](https://github.com/ELVIS-CHING/ROMS_related/blob/main/functions.md)  
-about how to turn on the functions  
+introducing the functions and how to turn on them  
 
 * [some small issues.md](https://github.com/ELVIS-CHING/ROMS_related/blob/main/some%20small%20issues.md)  
 something has to be noticed  
