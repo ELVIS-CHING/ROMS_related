@@ -25,7 +25,7 @@ Some basic useful commands can be found in this [official link](https://lmod.rea
 
 ## Servers that are using
 * hpc3  
-ifort + openmpi + NetCDF4  
+**ifort + openmpi + NetCDF4**  
 add the following commands in '\~/.bash_profile'  
 > module swap gnu8/8.3.0 intel/19.1.1.217  
 > module load netcdf-fortran/4.5.2 netcdf-cxx/4.3.1 netcdf/4.7.1  
@@ -40,7 +40,7 @@ location of NetCDF:
 * GZ_gjp
   
 * GZ_juno GZ_bl  
-ifort + openmpi + NetCDF4  
+**ifort + openmpi + NetCDF4**  
 add the following commands in '\~/.bash_profile'  
 > module load gcc/9.2.0  
 > module load intel/18.0.1  
@@ -52,8 +52,26 @@ in 'Linux-ifort.mk'
 
 * hqlx24  
 The hqlx servers can be a little complicated. They cannot load the '\~/.bashrc' automatically. You have to 'source ~/.bashrc' after login.
+
+**ifort + openmpi + NetCDF4**  
+add the following commands in '\~/.bashrc'  
+> export INTEL_LICENSE_FILE=/usr/local/intel-oneapi/licenses/COM_LMSN-HGN8WF5P.lic  
+> export PATH=/usr/local/netcdf4-intel/bin:$PATH  
+> export LD_LIBRARY_PATH=/usr/local/netcdf4-intel/lib:$LD_LIBRARY_PATH  
+> export PATH=/usr/local/intel-oneapi/mpi/latest/bin:$PATH  
+> export LD_LIBRARY_PATH=/usr/local/intel-oneapi/mpi/latest/lib:$LD_LIBRARY_PATH  
+> export I_MPI_F90=ifort
+
+first  
+> source ~/.bashrc
  
-  
+then  
+> source /usr/local/intel-oneapi/setvars.sh
+
+![1699242333562](https://github.com/ELVIS-CHING/ROMS_related/assets/62006950/2306fb04-6136-43da-b321-f53ac127df66)
+
+![image](https://github.com/ELVIS-CHING/ROMS_related/assets/62006950/4bb73bbd-329a-4fe6-b945-dbb8e163f9f1)
+
 * hqlx42/hqlx43
   
 
