@@ -4,8 +4,8 @@ things related to the ROMS model
 ## CONTRIBUTORS:
 ELVIS-CHING: Weicong  
 DanDanDanShen: Yanning  
-doulicn: LI Dou
-lsf911: Shangfei
+doulicn: LI Dou  
+lsf911: Shangfei  
 
 ## IMPORTANT LINKS
 * [WikiROMS](https://www.myroms.org/forum/viewforum.php?f=13)  
