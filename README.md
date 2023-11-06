@@ -24,7 +24,7 @@ important steps to run a model
 introducing the functions and how to turn on them  
 
 * [some small issues.md](https://github.com/ELVIS-CHING/ROMS_related/blob/main/some%20small%20issues.md)  
-something has to be noticed  
+some basic things have to be noticed, and bugs may be encountered  
 
 * [useful links.md](https://github.com/ELVIS-CHING/ROMS_related/blob/main/useful%20links.md)  
 share the useful links about the discussion of ROMS
