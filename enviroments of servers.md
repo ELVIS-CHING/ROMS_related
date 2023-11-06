@@ -48,7 +48,7 @@ add the following commands in '\~/.bash_profile'
 > module load netcdf/4.5.0-icc-15  
 > module load hdf5/1.8.21-icc-15
 
-in 'Linux-ifort.mk'  
+
 
 * hqlx24  
 The hqlx servers can be a little complicated. They cannot load the '\~/.bashrc' automatically. You have to 'source ~/.bashrc' after login.
@@ -70,7 +70,9 @@ then
 
 ![1699242333562](https://github.com/ELVIS-CHING/ROMS_related/assets/62006950/2306fb04-6136-43da-b321-f53ac127df66)
 
+in 'Linux-ifort.mk'  
 ![image](https://github.com/ELVIS-CHING/ROMS_related/assets/62006950/4bb73bbd-329a-4fe6-b945-dbb8e163f9f1)
+
 
 * hqlx42/hqlx43
   
