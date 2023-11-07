@@ -1,4 +1,5 @@
 # step to run a model
+
 * Set up the environments  
   make sure the compiler, mpi, NetCDF are set  
   more details in [enviroments of servers](https://github.com/ELVIS-CHING/ROMS_related/blob/main/enviroments%20of%20servers.md)
@@ -21,7 +22,7 @@
 
 * Run
   The scripts for submitting the job may be different on different servers. Some servers need to include the environments in the script.  
-  The fundamental one is    
+  The fundamental one is
   > mpirun -np number_of_cores ./oceanM *.in > logfile
 
   The 'logfile' records the running information, including the parameters, input and output information.  
