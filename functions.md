@@ -1,6 +1,6 @@
 # turn on the functions in '\*.h' or '*.in' file  
 
-There might be some differences in different versions of ROMS code. We may take ROMS3.7 as an example, and mark the version if it is for another version. 
+There might be some differences in different versions of ROMS code. We may take ROMS3.7 as an example, and mark the version if it is for another version.
 
 ----------------------------------------------
 

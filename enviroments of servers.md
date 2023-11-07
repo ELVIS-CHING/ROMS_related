@@ -28,7 +28,6 @@ Some basic useful commands can be found in this [official link](https://lmod.rea
 > NetCDF4 has the 'nf-config' command (not in NetCDF3), use the command 'nf-config --all' to show the package's location.
 ![1699191837253](https://github.com/ELVIS-CHING/ROMS_related/assets/62006950/7838adbb-9419-447b-99f6-3b5ab634f64a)
 
-
 ## Servers that are using
 
 * hpc3  
