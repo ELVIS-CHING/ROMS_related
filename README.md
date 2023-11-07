@@ -1,13 +1,16 @@
 # ROMS_related
+
 things related to the ROMS model
 
-## CONTRIBUTORS:
+## CONTRIBUTORS
+
 ELVIS-CHING: Weicong  
 DanDanDanShen: Yanning  
 doulicn: LI Dou  
 lsf911: Shangfei  
 
 ## IMPORTANT LINKS
+
 * [WikiROMS](https://www.myroms.org/forum/viewforum.php?f=13)  
   the basic knowledge about ROMS and some guidance
 
@@ -15,6 +18,7 @@ lsf911: Shangfei
   modeling discussion
   
 ## CONTENTS
+
 * [environments of servers.md](https://github.com/ELVIS-CHING/ROMS_related/blob/main/enviroments%20of%20servers.md)  
 about how to set the environments on different servers  
 
