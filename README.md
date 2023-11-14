@@ -19,6 +19,9 @@ lsf911: Shangfei
   
 ## CONTENTS
 
+* [ROMS basis.md]([https://github.com/ELVIS-CHING/ROMS_related/tree/main](https://github.com/ELVIS-CHING/ROMS_related/blob/main/ROMS%20basis.md)
+some very basic things about ROMS
+
 * [environments of servers.md](https://github.com/ELVIS-CHING/ROMS_related/blob/main/enviroments%20of%20servers.md)  
 about how to set the environments on different servers  
 
@@ -28,7 +31,7 @@ important steps to run a model
 * [functions.md](https://github.com/ELVIS-CHING/ROMS_related/blob/main/functions.md)  
 introducing the functions and how to turn on them  
 
-* [some small issues.md](https://github.com/ELVIS-CHING/ROMS_related/blob/main/some%20small%20issues.md)  
+* [some small issues (bugs).md](https://github.com/ELVIS-CHING/ROMS_related/blob/main/some%20small%20issues.md)  
 some basic things have to be noticed, and bugs may be encountered  
 
 * [useful links.md](https://github.com/ELVIS-CHING/ROMS_related/blob/main/useful%20links.md)  
