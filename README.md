@@ -19,7 +19,7 @@ lsf911: Shangfei
   
 ## CONTENTS
 
-* [ROMS basis.md]([https://github.com/ELVIS-CHING/ROMS_related/tree/main](https://github.com/ELVIS-CHING/ROMS_related/blob/main/ROMS%20basis.md)
+* [ROMS basis.md](https://github.com/ELVIS-CHING/ROMS_related/blob/main/ROMS%20basis.md)  
 some very basic things about ROMS
 
 * [environments of servers.md](https://github.com/ELVIS-CHING/ROMS_related/blob/main/enviroments%20of%20servers.md)  
