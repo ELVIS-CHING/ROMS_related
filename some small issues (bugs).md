@@ -1,4 +1,4 @@
-# Something has to be noticed
+# Something (bugs) has to be noticed
 
 - [Something has to be noticed](#something-has-to-be-noticed)
   - [Common issues for all versions](#common-issues-for-all-versions)
@@ -23,5 +23,7 @@
 - 'RIVER_OM' : if you cannot undef this mode
   >   ROMS/Unility/inp_par.F: 3764 lost ifdef RIVER_OM
 
-
-- in 
+- in a version with module "RIVER_OM" added, the following code is reapted in Line 1686 and 1871, the latter one should be deleted  
+```fortran
+Bio(i,1,indx)=Bio(i,1,indx)+cff1_wc
+```
