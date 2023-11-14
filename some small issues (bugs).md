@@ -6,10 +6,14 @@
 
 ## Common issues for all versions
 
-- note the reference time in all input *.nc file and in the '*.in' file  
+- note the reference time in all input “*.nc file and in the '*.in' file  1726, 1740, and 1741
 
 - varinfo.dat ( do not confuse the different versions)
-  
+
+## ROMS37 version with bio module modification
+
+- in one version code, "indx" should be "ibio" in fennel.h of line
+
 ## ROMS32 version with bio module modification
 
 - must define the diagnostic output
@@ -19,3 +23,6 @@
 
 - 'RIVER_OM' : if you cannot undef this mode
   >   ROMS/Unility/inp_par.F: 3764 lost ifdef RIVER_OM
+
+
+- in 
