@@ -38,3 +38,9 @@ in "Fennel.h"
 
 in "sed_settling.F"  
 ![image](https://github.com/ELVIS-CHING/ROMS_related/assets/62006950/c39f0124-20f2-429b-89da-083e326a8336)
+
+
+## about bulk flux 
+
+if def BULK_FLUX; should give wind speed (not wind stress) in forcing file;
+if undef BULK_FLUX; should give wind stress(not wind speed) in forcing file.
