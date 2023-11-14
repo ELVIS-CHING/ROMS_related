@@ -11,7 +11,7 @@ lsf911: Shangfei
 
 ## IMPORTANT LINKS
 
-* [WikiROMS](https://www.myroms.org/forum/viewforum.php?f=13)  
+* [WikiROMS](https://www.myroms.org/wiki/Documentation_Portal)  
   the basic knowledge about ROMS and some guidance
 
 * [ROMS FORUM](https://www.myroms.org/forum/viewforum.php?f=13)  
