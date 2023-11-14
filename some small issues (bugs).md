@@ -6,13 +6,12 @@
 
 ## Common issues for all versions
 
-- note the reference time in all input “*.nc file and in the '*.in' file  1726, 1740, and 1741
-
+- note the reference time in all input “\*.nc file and in the "\*.in" file  
 - varinfo.dat ( do not confuse the different versions)
 
 ## ROMS37 version with bio module modification
 
-- in one version code, "indx" should be "ibio" in fennel.h of line
+- in one version code, "indx" should be "ibio" in fennel.h of line 1726, 1740, and 1741  
 
 ## ROMS32 version with bio module modification
 
