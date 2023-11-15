@@ -40,7 +40,33 @@ in "sed_settling.F"
 ![image](https://github.com/ELVIS-CHING/ROMS_related/assets/62006950/c39f0124-20f2-429b-89da-083e326a8336)
 
 
-## about bulk flux 
+## about the atmospheric forcing  
 
-if def BULK_FLUX; should give wind speed (not wind stress) in forcing file;
-if undef BULK_FLUX; should give wind stress(not wind speed) in forcing file.
+specify **wind stress** or use **BULK_FLUX**
+- wind stress
+remember to include "#undef ANA_SMFLUX" or delete "#define ANA_SMFLUX " in the "*.h" file
+there should be "sustr" and "svstr" for the wind stress in two directions in the forcing input file  
+
+- BULK_FLUX
+remember to include "#define BULK_FLUX" in the "*.h" file  
+can also define the following functions at the same time  
+> \#define EMINUSP  
+> \#define SOLAR_SOURCE  
+> \#define LONGWAVE
+ 
+the following variables are needed in the forcing input file (may refer to /Data/ROMS/CDL/frc_bulk.cdl):  
+> surface u-wind component (**wind speed rather than wind stress**)  
+> surface v-wind component (**wind speed rather than wind stress**)   
+> surface air pressure  
+> surface air temperature  
+> surface air relative humidity  
+> cloud fraction  
+> solar shortwave radiation flux  
+> rain fall rate
+
+***notice***  
+For the atmospheric forcing, you may specify data for one point or the whole grid.  
+* data for one point
+  The whole grid will use the same forcing. In this case, wind stress (speed) is given on the eastward and northward direction. The model will rotate them to the $\xi$ and $\eta$ directions ([Curvilinear Coordinates](https://www.myroms.org/wiki/Curvilinear_Coordinates)) automatically.
+* data for the whole grid
+  V
