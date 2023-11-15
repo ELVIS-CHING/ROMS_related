@@ -49,11 +49,11 @@ in "sed_settling.F"
 ## atmospheric forcing  
 
 specify **wind stress** or use **BULK_FLUX**
-- wind stress
+- wind stress  
 remember to include "#undef ANA_SMFLUX" or delete "#define ANA_SMFLUX " in the "*.h" file
 there should be "sustr" and "svstr" for the wind stress in two directions in the forcing input file  
 
-- BULK_FLUX
+- BULK_FLUX  
 remember to include "#define BULK_FLUX" in the "*.h" file  
 can also define the following functions at the same time  
 > \#define EMINUSP  
@@ -68,11 +68,15 @@ the following variables are needed in the forcing input file (may refer to /Data
 > surface air relative humidity  
 > cloud fraction  
 > solar shortwave radiation flux  
-> rain fall rate
+> rain fall rate  
+
+references for the BULK_FLUX function  
+- [Bulk parameterization of air-sea fluxes for Tropical Ocean-Global Atmosphere Coupled-Ocean Atmosphere Response Experiment](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/95JC03205)  
+- [Bulk Parameterization of Air–Sea Fluxes: Updates and Verification for the COARE Algorithm](https://journals.ametsoc.org/view/journals/clim/16/4/1520-0442_2003_016_0571_bpoasf_2.0.co_2.xml)
 
 ***notice***  
 For the atmospheric forcing, you may specify data for one point or the whole grid.  
 * data for one point  
   The whole grid will use the same forcing. In this case, wind stress (speed) is given on the eastward and northward direction. The model will rotate them to the $\xi$ and $\eta$ directions ([Curvilinear Coordinates](https://www.myroms.org/wiki/Curvilinear_Coordinates)) automatically.
 * data for the whole grid  
-  Values are given for each model grid. **In this case, wind stress (speed) is given on the $\xi$ and $\eta$ directions**.  
+  Values are given for each model grid. In this case, wind stress (speed) is given on the **$\xi$ and $\eta$ directions**.  
