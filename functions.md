@@ -2,6 +2,12 @@
 
 There might be some differences in different versions of ROMS code. We may take ROMS3.7 as an example, and mark the version if it is for another version.
 
+- [turn on the functions in "\*.h" or "\*.in" file](#turn-on-the-functions-in-h-or-in-file)
+  - [tidal forcing](#tidal-forcing)
+  - [Coriolis force](#coriolis-force)
+  - [about the particle sinking](#about-the-particle-sinking)
+  - [atmospheric forcing](#atmospheric-forcing)
+
 ----------------------------------------------
 
 ## tidal forcing  
@@ -40,7 +46,7 @@ in "sed_settling.F"
 ![image](https://github.com/ELVIS-CHING/ROMS_related/assets/62006950/c39f0124-20f2-429b-89da-083e326a8336)
 
 
-## about the atmospheric forcing  
+## atmospheric forcing  
 
 specify **wind stress** or use **BULK_FLUX**
 - wind stress
