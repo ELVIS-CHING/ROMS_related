@@ -66,7 +66,7 @@ the following variables are needed in the forcing input file (may refer to /Data
 
 ***notice***  
 For the atmospheric forcing, you may specify data for one point or the whole grid.  
-* data for one point
+* data for one point  
   The whole grid will use the same forcing. In this case, wind stress (speed) is given on the eastward and northward direction. The model will rotate them to the $\xi$ and $\eta$ directions ([Curvilinear Coordinates](https://www.myroms.org/wiki/Curvilinear_Coordinates)) automatically.
-* data for the whole grid
-  V
+* data for the whole grid  
+  Values are given for each model grid. **In this case, wind stress (speed) is given on the $\xi$ and $\eta$ directions**.  
