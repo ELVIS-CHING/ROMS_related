@@ -7,6 +7,7 @@ There might be some differences in different versions of ROMS code. We may take 
   - [Coriolis force](#coriolis-force)
   - [about the particle sinking](#about-the-particle-sinking)
   - [atmospheric forcing](#atmospheric-forcing)
+  - [fixed temperature and salinity](#fixed-temperature-and-salinity)
 
 ----------------------------------------------
 
@@ -80,3 +81,10 @@ For the atmospheric forcing, you may specify data for one point or the whole gri
   The whole grid will use the same forcing. In this case, wind stress (speed) is given on the eastward and northward direction. The model will rotate them to the $\xi$ and $\eta$ directions ([Curvilinear Coordinates](https://www.myroms.org/wiki/Curvilinear_Coordinates)) automatically.
 * data for the whole grid  
   Values are given for each model grid. In this case, wind stress (speed) is given on the **$\xi$ and $\eta$ directions**.  
+
+## fixed temperature and salinity  
+
+> #define TS_FIXED
+
+to see how the flow responds to the density field, useful for comparing with the analytical solution  
+the temperature and salinity will not evolve with the circulation  
