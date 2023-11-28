@@ -12,61 +12,61 @@ CALL initial -> initial.F
 ### CALL ROMS_run -> ocean_control.F
 
 > CALL main3d -> main3d.F
->> ***get the forcing and boundary data***
+>> ***get the forcing and boundary data***  
 >> CALL get_data
 >> CALL set_data
 >>
->> ***initialized the field***
+>> ***initialized the field***  
 >> CALL ini_zeta
 >> CALL set_depth
 >> CALL ini_fields
 >>
->> ***compute the mass flux***
+>> ***compute the mass flux***  
 >> CALL set_massflux
 >> CALL rho_eos
 >>
->> ***vertical boundary condtions***
+>> ***vertical boundary condtions***  
 >> CALL_bulk flux
 >> CALL set_vbc
 >> CALL set_tides
 >>
->> ***vertical velocity***
+>> ***vertical velocity***  
 >> CALL omega
 >> CALL wvelocity
 >>
->> ***set time-averaged***
+>> ***set time-averaged***  
 >> CALL set_zeta
 >> CALL set_diags
 >> CALL set_avg
 >>
->> ***write out***
+>> ***write out***  
 >> CALL output
 >>> CALL def_his
 >>>> CALL def_info
 >>>> CALL wrt_info
 >>
->>***compute right-hand-side terms for 3D equation***
+>>***compute right-hand-side terms for 3D equation***  
 >> CALL rhs3d
 >> CALL my_prestep
 >>
->> ***solve the vertically interated equations***
+>> ***solve the vertically interated equations***  
 >> CALL step2d
 >>
->> ***set depth and thickness with new time zeta***
+>> ***set depth and thickness with new time zeta***  
 >> CALL set_depth
 >>
->> ***3D momentum equations***
+>> ***3D momentum equations***  
 >> CALL step3d_uv
 >>
->> ***vertical velocity and mixing***
+>> ***vertical velocity and mixing***  
 >> CALL omega
 >> CALL my25_corstep
 >>
->> ***biology and sediment***
+>> ***biology and sediment***  
 >> CALL biology
 >> CALL sediment
 >>
->> ***tracer equation***
+>> ***tracer equation***  
 >> CALL step3d_t
 >>
 ### CALL ROMS_finalize -> ocean_control.F
