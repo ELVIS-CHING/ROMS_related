@@ -1,5 +1,6 @@
 # program sturcture  
-(routine name -> file name)
+
+(routine name -> file name containing the routine)
 
 ## OCEAN -> master.F
 
