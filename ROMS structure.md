@@ -1,4 +1,4 @@
-# program sturcture  
+# program structure  
 
 (routine name -> file name containing the routine)
 
