@@ -4,13 +4,20 @@
 
 ## OCEAN -> master.F
 
-### CALL ROMS_initialize -> ocean_control.F
+### CALL ROMS_initialize -> Drivers/nl_ocean.h  
 
-CALL initial -> initial.F
+> CALL initialize_parallel -> Modules/mod_parallel.F  
+> 
+> CALL inp_par -> Utility/inp_par.F  
+> 
+> CALL wclock_on  
+> 
+> CALL mod_arrays -> Modules/mod_arrays.F  
+> 
+> CALL initial -> initial.F  
+>> CALL meterics -> meterics.F  
 
-> CALL meterics -> meterics.F
-
-### CALL ROMS_run -> ocean_control.F
+### CALL ROMS_run -> Drivers/nl_ocean.h
 
 > CALL main3d -> main3d.F
 >> ***get the forcing and boundary data***  
@@ -71,6 +78,10 @@ CALL initial -> initial.F
 >> CALL step3d_t  
 >>
 
-### CALL ROMS_finalize -> ocean_control.F
+### CALL ROMS_finalize -> Drivers/nl_ocean.h
 
->
+> CALL wrt_rst (ng)  
+> 
+> CALL wclock_off  
+> 
+> CALL close_out
