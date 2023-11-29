@@ -52,7 +52,21 @@
 >>> CALL def_his  
 >>>> CALL def_info  
 >>>> CALL wrt_info  
->>
+>>>
+>>> CALL wri_his
+>>>> CALL netcdf_put_fvar    
+>>>> CALL scale_omeg  
+>>>> CALL netcdf_sync 
+>>>
+>>> CALL def_avg 
+>>>> CALL netcdf_create     
+>>>> CALL def_info    
+>>>> CALL netcdf_enddef      
+>>>> CALL wrt_info    
+>>>> CALL netcdf_check_dim    
+>>>> CALL netcdf_inq_var     
+>>>> CALL netcdf_open     
+>>>
 >>***compute right-hand-side terms for 3D equation***  
 >> CALL rhs3d  
 >> CALL my_prestep  
