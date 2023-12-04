@@ -11,10 +11,16 @@
 - varinfo.dat ( do not confuse the different versions)
 
 - error when reading '*\*.in*'  
-  '*vi \*.in*' and past the following command  
-```bash
- :set fileformat=unix
-```
+  This error may occurs when using the new PGI (nvfortran) compiler.  
+  ![image](https://github.com/ELVIS-CHING/ROMS_related/assets/62006950/dcd58cb6-7f87-4dda-936d-fb4c032536aa)
+
+  ```bash
+  vi *.in
+  ```
+  and past the following command  
+  ```bash
+   :set fileformat=unix
+  ```
 
 ## ROMS37 version with bio module modification
 
