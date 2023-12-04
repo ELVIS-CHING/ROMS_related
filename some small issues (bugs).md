@@ -6,8 +6,15 @@
 
 ## Common issues for all versions
 
-- note the reference time in all input “\*.nc file and in the "\*.in" file  
+- note the reference time in all input “\*.nc file and in the "\*.in" file
+  
 - varinfo.dat ( do not confuse the different versions)
+
+- error when reading '*\*.in*'  
+  '*vi \*.in*' and past the following command  
+```bash
+ :set fileformat=unix
+```
 
 ## ROMS37 version with bio module modification
 

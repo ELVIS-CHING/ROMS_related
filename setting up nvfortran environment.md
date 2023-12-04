@@ -1,9 +1,9 @@
-# setting up MPI and NetCDF with nvfortran for ROMS  
+# Setting up MPI and NetCDF with nvfortran for ROMS  
 
 This instruction takes hpc3 for example.  
-After setting up all the packages, we can use nvfortran as pgi (modified '*Compilers/Linux-pgi.mk*' and set '*FORT = pgi*' in '*build.bash*').  
+After setting up all the packages, we can use nvfortran as pgi (modify '*Compilers/Linux-pgi.mk*' and set '*FORT = pgi*' in '*build.bash*').  
 
-## load the nvfortran on server  
+## load the nvfortran on the server  
 
 ```bash
 module load nvhpc/21.9
