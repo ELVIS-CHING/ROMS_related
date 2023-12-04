@@ -9,7 +9,9 @@ The environment settings should be specified before compiling the code, and may 
 * The path of NetCDF should be specified in 'Linux-ifort.mk' (if ifort is used) in the "Compilers" directory.
 
 The new HPCs usually use [Lmod](https://lmod.readthedocs.io/en/latest/index.html#) to manage the software packages. With Lmod, we can set up the environments easily by adding the modules in '\~/.bash_profile' or '~/.bashrc'. Every time log in to the server, it will load the settings in '\~/.bash_profile' automatically. Or use the command 'source ~/.bash_profile' to update the settings after modifying it.  
-Some basic useful commands can be found in this [official link](https://lmod.readthedocs.io/en/latest/010_user.html), or this [simple introduction](https://qingli411.github.io/eesrf-hpc-user-guide/hpc1/environment.html) provided by Prof. Li Qing.
+Some basic useful commands can be found in this [official link](https://lmod.readthedocs.io/en/latest/010_user.html), or this [simple introduction](https://qingli411.github.io/eesrf-hpc-user-guide/hpc1/environment.html) provided by Prof. Li Qing.  
+
+**For using GPU, nvfortran is needed.** On most servers, we may need to set up MPI and NetCDF for nvfortran by ourself. Instructions are shown [here](/setting%20up%20nvfortran%20environment.md).  
 
 ## Check the environments (take hpc3 for example)
 

@@ -1,6 +1,7 @@
-# setting up MPI and NetCDF with nvfortran for ROMS   
+# setting up MPI and NetCDF with nvfortran for ROMS  
 
-take hpc3 for example  
+This instruction takes hpc3 for example.  
+After setting up all the packages, we can use nvfortran as pgi (modified '*Compilers/Linux-pgi.mk*' and set '*FORT = pgi*' in '*build.bash*').  
 
 ## load the nvfortran on server  
 
@@ -50,7 +51,7 @@ source ~/.bashrc
 add the following in '*~/.bashrc*' or '*~/.bash_profile*' (preferred)  
 
 ```bash
-NETCDF_HOME=/home/user/netcdf_nvfortran
+NETCDF_HOME=/home/user/netcdf_nvfortran  # set you own directory for installation here
 export PATH=${NETCDF_HOME}/bin:$PATH
 export LD_LIBRARY_PATH=${NETCDF_HOME}/lib:$LD_LIBRARY_PATH
 export LD_RUN_PATH=${NETCDF_HOME}/lib:$LD_RUN_PATH
@@ -63,6 +64,13 @@ source ~/.bash_profile
 or
 source ~/.bashrc
 ```
+
+4 package will be installed  
+
+* szip  
+* hdf5  
+* netcdf-c  
+* netcdf-fortran  
 
 ### szip  
 
