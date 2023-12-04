@@ -16,6 +16,9 @@ lsf911: Shangfei
 
 * [ROMS FORUM](https://www.myroms.org/forum/viewforum.php?f=13)  
   modeling discussion
+
+* [ROMS Tutorials](https://www.myroms.org/wiki/HK_2011)  
+  Hong Kong workshop  
   
 ## CONTENTS
 
