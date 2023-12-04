@@ -20,17 +20,17 @@
 
   using "build.bash"  
   > ./build.bash -j 4  
-  <br/>
 
+  <br/>
 * Prepare the input files  
   There is an official toolbox for preparing the input '*.nc' files, but I cannot find the link now (maybe I will update later).  
   Or ask someone for that.
-  <br/>
 
+  <br/>
 * Set the parameters and input/output information  
   If you turn on some functions in the '*.h' file, remember to set the things in '\*.in' file
+
   <br/>
-  
 * Run
   The scripts for submitting the job may be different on different servers. Some servers need to include the environments in the script.  
   The fundamental one is
