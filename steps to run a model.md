@@ -2,12 +2,12 @@
 
 * Set up the environments  
   make sure the compiler, mpi, NetCDF are set  
-  more details in [enviroments of servers](https://github.com/ELVIS-CHING/ROMS_related/blob/main/enviroments%20of%20servers.md)
+  more details in [enviroments of servers](/enviroments%20of%20servers.md)
   <br/>
 
 * Configure the functions (turning on the different options in '*.h' file)  
   check the functions needed for you case  
-  [functions.md](https://github.com/ELVIS-CHING/ROMS_related/blob/main/functions.md)
+  [functions.md](/functions.md)
   <br/>
 
 * Compile the code  

@@ -5,8 +5,8 @@ The environment settings can be different on different servers. Usually, we use 
 
 The environment settings should be specified before compiling the code, and may also need to be specified in the submitting script on some servers.  
 
-* The Fortran compiler and mpi are specified in 'build.bash' (or 'makefile', refer to [steps to run a model](https://github.com/ELVIS-CHING/ROMS_related/blob/main/steps%20to%20run%20a%20model.md) )
-* The path of NetCDF should be specified in 'Linux-ifort.mk' (if ifort is used) in the "Compilers" directory.
+* The Fortran compiler and mpi are specified in 'build.bash' (or 'makefile', refer to [steps to run a model](/steps%20to%20run%20a%20model.md))
+* The path of NetCDF should be specified in '*Linux-ifort.mk*' (if ifort is used) in the "Compilers" directory.
 
 The new HPCs usually use [Lmod](https://lmod.readthedocs.io/en/latest/index.html#) to manage the software packages. With Lmod, we can set up the environments easily by adding the modules in '\~/.bash_profile' or '~/.bashrc'. Every time log in to the server, it will load the settings in '\~/.bash_profile' automatically. Or use the command 'source ~/.bash_profile' to update the settings after modifying it.  
 Some basic useful commands can be found in this [official link](https://lmod.readthedocs.io/en/latest/010_user.html), or this [simple introduction](https://qingli411.github.io/eesrf-hpc-user-guide/hpc1/environment.html) provided by Prof. Li Qing.  
