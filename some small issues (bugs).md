@@ -40,3 +40,5 @@
 ```fortran
 Bio(i,1,indx)=Bio(i,1,indx)+cff1_wc
 ```
+
+![image](https://github.com/ELVIS-CHING/ROMS_related/assets/149153513/bb7635a0-4fbb-4582-a1ce-a9ffec8096f3)
