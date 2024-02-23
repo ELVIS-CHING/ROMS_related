@@ -44,7 +44,7 @@ in 'Linux-ifort.mk'
 location of NetCDF:
 > ![image](https://github.com/ELVIS-CHING/ROMS_related/assets/62006950/b85fe4a2-731a-4516-9058-007340770dba)
 
-
+```
 ifdef USE_NETCDF4
 #hpc3
     NETCDF_INCDIR ?= /opt/ohpc/pub/libs/intel/openmpi3/netcdf-fortran/4.5.2/include
@@ -57,8 +57,25 @@ else
     NETCDF_LIBDIR ?= /opt/ohpc/pub/libs/intel/openmpi3/netcdf-fortran/4.5.2/lib
              LIBS := -L$(NETCDF_LIBDIR) -lnetcdff
 endif
+```
 
 * hkust_gz
+
+```
+ifdef USE_NETCDF4
+# hkustgz
+    NETCDF_INCDIR ?= public/apps/module/intel-2023_2/openmpi-4_1/netcdf/4.9.2/include
+    NETCDF_LIBDIR ?= public/apps/module/intel-2023_2/openmpi-4_1/netcdf/4.9.2/lib
+      HDF5_LIBDIR ?= /opt/intelsoft/hdf5/lib
+             LIBS += -L$(HDF5_LIBDIR) -lhdf5_hl -lhdf5 -lz
+else
+#hkustgz
+    NETCDF_INCDIR ?= /public/apps/module/intel-2023_2/openmpi-4_1/netcdf/4.9.2/include
+    NETCDF_LIBDIR ?= /public/apps/module/intel-2023_2/openmpi-4_1/netcdf/4.9.2/lib
+             LIBS := -L$(NETCDF_LIBDIR) -lnetcdff -lnetcdf -lm
+endif
+```
+
 * Tianjin
 * GZ_gjp
   
