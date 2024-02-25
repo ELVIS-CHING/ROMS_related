@@ -34,7 +34,7 @@ important steps to run a model
 * [functions.md](/functions.md)  
 introducing the functions and how to turn on them  
 
-* [some small issues (bugs).md](/some%20small%20issues.md)  
+* [some small issues (bugs).md](/some%20small%20issues%20(bugs).md)  
 some basic things have to be noticed, and bugs may be encountered  
 
 * [useful links.md](/useful%20links.md)  
