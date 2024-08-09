@@ -1,10 +1,21 @@
 # Something (bugs) has to be noticed
 
-- [Something has to be noticed](#something-has-to-be-noticed)
+- [Something (bugs) has to be noticed](#something-bugs-has-to-be-noticed)
   - [Common issues for all versions](#common-issues-for-all-versions)
+  - [ROMS37 version with bio module modification](#roms37-version-with-bio-module-modification)
   - [ROMS32 version with bio module modification](#roms32-version-with-bio-module-modification)
 
 ## Common issues for all versions
+
+- not enough memory  
+  
+```bash
+=============================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 0 PID 20373 RUNNING AT dn037
+=   KILLED BY SIGNAL: 9 (Killed)
+=============================================================================
+```
 
 - note the reference time in all input “\*.nc file and in the "\*.in" file
   
