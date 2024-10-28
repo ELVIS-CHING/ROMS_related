@@ -8,10 +8,11 @@
 
 > CALL initialize_parallel -> Modules/mod_parallel.F  
 > 
-> CALL inp_par -> Utility/inp_par.F
->> ***load the lateral boundary condition (LBC) information***
->> CALL read_BioPar -> read_biopar.F (fennel_inp.h)
+> CALL inp_par -> Utility/inp_par.F  
+>> ***load the lateral boundary condition (LBC) information***  
+>> CALL read_BioPar -> read_biopar.F (fennel_inp.h)  
 >>> load_lbc -> inp_par.F
+>>
 >> CALL lbc_report -> lbc.F
 > 
 > CALL wclock_on  
