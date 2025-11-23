@@ -7,6 +7,61 @@
 
 ## Common issues for all versions
 
+- About the tracer volume flux
+  The original program for tracer volume flux output is (ROMS37 code, `set_avg.F`),
+
+```fortran
+                  AVERAGE(ng)%avgHuonT(i,j,k,it)=0.5_r8*                &
+     &                                           GRID(ng)%Huon(i,j,k)*  &
+     &        (OCEAN(ng)%t(i-1,j,k,Nout,it)+ OCEAN(ng)%t(i,j,k,Nout,it))
+```  
+  
+  which can not match the diagnostic advection term. It is better to use the flux calculated in `step3d_t.F`
+  
+```fortran
+!
+!  Time-step corrected horizontal advection (Tunits m).
+!
+          DO j=Jstr,Jend
+            DO i=Istr,Iend
+              cff=dt(ng)*pm(i,j)*pn(i,j)
+              cff1=cff*(FX(i+1,j)-FX(i,j))
+              cff2=cff*(FE(i,j+1)-FE(i,j))
+              cff3=cff1+cff2
+              t(i,j,k,nnew,itrc)=Ta(i,j,k,itrc)*Hz(i,j,k)-cff3
+!! CHENG WC, 2025-11-21, START
+              uflux(i,j,k,itrc)=FX(i,j)
+              vflux(i,j,k,itrc)=FE(i,j)
+!! CHENG WC, 2025-11-21, END
+#  ifdef DIAGNOSTICS_TS
+              DiaTwrk(i,j,k,itrc,iTxadv)=DiaTwrk(i,j,k,itrc,iTxadv)-    &
+     &                                   cff1
+              DiaTwrk(i,j,k,itrc,iTyadv)=DiaTwrk(i,j,k,itrc,iTyadv)-    &
+     &                                   cff2
+              DiaTwrk(i,j,k,itrc,iThadv)=DiaTwrk(i,j,k,itrc,iThadv)-    &
+     &                                   cff3
+#  endif
+            END DO
+          END DO
+```
+
+  and modify the code in `set_avg.F`
+
+```fortran
+                  AVERAGE(ng)%avgHuonT(i,j,k,it)=uflux(i,j,k,it)
+```
+
+- Values of output  
+
+  For some output values, they are scaled in `wrt_avg.F` or `wrt_diags.F`.
+  For example, the  diagnostic terms are multiplied by the time step `dt`, but the unit in the output nc file is $$s^{-1}$$. That's because in `wrt_diags.F`, all the terms are scaled by
+
+```fortran
+            scale=1.0_r8/dt(ng)
+```
+
+when they are written to the file.
+
 - not enough memory  
   
 ```bash
