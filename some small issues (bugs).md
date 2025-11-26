@@ -51,6 +51,9 @@
                   AVERAGE(ng)%avgHuonT(i,j,k,it)=uflux(i,j,k,it)
 ```
 
+With this modification, the layer-integrated domain-sum advection term is still not able to match the flux through the boundaries, which is related to the sigma coordination (refer to the image below). For the whole water column integration, these two terms can match well.  
+<img width="956" height="1106" alt="image" src="https://github.com/user-attachments/assets/a0f7413d-a3a4-4425-b886-83b7139a4a7d" />
+
 - Values of output  
 
   For some output values, they are scaled in `wrt_avg.F` or `wrt_diags.F`.
